@@ -25,3 +25,12 @@ def simple_power(num: int):
     :return:
     """
     return pow(num, 2)
+
+
+def simple_multi(num: int):
+    """
+    This is simple_multi
+    :param num:
+    :return:
+    """
+    return num*2

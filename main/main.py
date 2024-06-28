@@ -15,3 +15,7 @@ def test_simple_upper():
 def test_simple_return():
     text = 'asdasdas'
     assert text == simple_return(text)
+
+def test_simple_multi():
+    num = 5
+    assert 5*2 == simple_multi(num)
