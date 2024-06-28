@@ -1,5 +1,6 @@
 """This is module"""
 
+
 def simple_return(text: str):
     """
     This is simple return

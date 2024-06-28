@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('pylint') {
+        stage('Static analysis') {
             steps {
                 sh 'pylint main/'
             }
         }
-        stage('pytest') {
+        stage('Pytest stage') {
             steps {
                 sh 'pytest -v main/main.py'
             }
