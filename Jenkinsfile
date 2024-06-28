@@ -2,19 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('pylint') {
             steps {
-                echo 'Building..'
+                sh 'pylint main/fun_to_test.py'
             }
         }
-        stage('Test') {
+        stage('pytest') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh 'pytest -v main/main.py'
             }
         }
     }
