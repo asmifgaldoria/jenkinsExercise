@@ -35,3 +35,13 @@ def simple_multi(num: int):
     :return:
     """
     return num*2
+
+
+def simple_add(num1: int, num2: int):
+    """
+    This is simple_multi
+    :param num1:
+    :param num2:
+    :return:
+    """
+    return num1 + num2
