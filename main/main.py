@@ -36,3 +36,12 @@ def test_simple_multi():
     """
     num = 5
     assert 5*2 == simple_multi(num)
+
+
+def test_simple_add():
+    """
+    simple_add
+    :return:
+    """
+    num1, num2 = 5, 6
+    assert num1+num2 == simple_add(num1, num2)
