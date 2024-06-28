@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pylint') {
             steps {
-                sh 'pylint main/fun_to_test.py'
+                sh 'pylint main/'
             }
         }
         stage('pytest') {
